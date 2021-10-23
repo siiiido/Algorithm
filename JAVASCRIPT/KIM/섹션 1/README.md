@@ -10,7 +10,17 @@ Math.floor(2.98) => 2 //내림
 Math.round(2.5) => 3 // 반올림
 ```
 
-* ## Number.MAX_SAFE_INTEGER : 엄청나게 큰 숫자 -> 최솟값 구할 때 초기값으로 설정하면 편함  
+* ## 최댓값, 최솟값 초기 세팅
+```javascript
+//최솟값 초기 세팅
+let min = Number.MAX_SAFE_INTEGER;
+// Number.MAX_SAFE_INTEGER : 엄청나게 큰 숫자
+
+// 최댓값 초기 세팅
+let max = Number.MIN_SAFE_INTEGER;
+// Number.MIN_SAFE_INTEGER : 엄청나게 작은 숫자 
+```
+
 
 
 * ## 내장함수 최솟값, 최대값
@@ -304,4 +314,23 @@ for(let x of str){
     let num = x.charCodeAt();
     console.log(String.fromCharCode(num-32));// A B C
 }
+```
+
+* ## 문자열 자르기 [ substring(), substr() ]
+
+```javascript
+//substr()
+substr(start, 길이) // start부터 길이만큼 출력
+let str = "study";
+console.log(str.substr(1,2));//str[1] = t 부터 2개 출력 -> tu
+console.log(str.substr(5,3));//undefined
+console.log(str.substr(-1,2));//str[-1] = y 부터 2개 출력 근데 y가 끝음 -> y
+console.log(str.substr(-3,2));//str[-3]=u 부터 2개 -> ud
+
+
+//substring()
+substring(start, end)//start부터 end-1까지 출력
+let str = "america"
+console.log(str.substring(1,2));//str[1]=m 부터 2-1까지니깐 -> m만 출력
+console.log(str.substring(1,5));//str[1]=m 부터 5-1까지니깐 -> meri 출력
 ```
