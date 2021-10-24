@@ -334,3 +334,17 @@ let str = "america"
 console.log(str.substring(1,2));//str[1]=m 부터 2-1까지니깐 -> m만 출력
 console.log(str.substring(1,5));//str[1]=m 부터 5-1까지니깐 -> meri 출력
 ```
+* ## indexOf()
+    * 찾는 문자열이 처음으로 발견된 index 출력
+    * 찾는 문자열이 없으면 -1 리턴
+    * 대소문자 구분해서 찾음
+```javascript
+indexOf(찾는 문자열, 포지션); // 포지션 생략가능
+let str = "abcdbcb";
+console.log(str.indexOf('b')); // 1
+console.log(str.indexOf('b',2)); //str[2]부터 처음으로 나오는 b 인덱스 출력 -> 4
+console.log(str.indexOf('k')); //못찾으면 -1출력
+
+let str = "aaaa"
+console.log(str.indexOf('a',1)); // 1
+```
