@@ -1,7 +1,11 @@
 # 배운 것 정리하기
 
+<br>
+
 * 삼각형 조건 : 가장 긴 변 < 나머지 두 변의 합   
 즉 가장 긴 변 >= 나머지 두 변의 합 이면 삼각형이 만들어 질 수 없다.
+
+<br><br>
 
 * ## Math 객체 잘 알기
 ``` javascript
@@ -9,6 +13,8 @@ Math.ceil(2.123) => 3 //올림
 Math.floor(2.98) => 2 //내림
 Math.round(2.5) => 3 // 반올림
 ```
+
+<br><br>
 
 * ## 최댓값, 최솟값 초기 세팅
 ```javascript
@@ -21,7 +27,7 @@ let max = Number.MIN_SAFE_INTEGER;
 // Number.MIN_SAFE_INTEGER : 엄청나게 작은 숫자 
 ```
 
-
+<br><br>
 
 * ## 내장함수 최솟값, 최대값
 ```javascript
@@ -39,6 +45,9 @@ let a= Math.max(arr); // ERROR, 배열 넣으면 에러 뜸(인자를 넣어야�
 
 let a = Math.max(...arr); // 배열을 넣을 때는 이렇게 spread로 펴줘서 넣어야한다.
 ```
+
+<br><br>
+
 * ## for of
 ```javascript
 let a=[10,11,12,13,14,15];
@@ -49,6 +58,8 @@ let a=[10,11,12,13,14,15];
 let str = "songsang"
 // for(let i of str) 은 str문자열 하나씩 출력
 ```
+
+<br><br>
 
 * ## forEach => for 반복문 대신 사용 가능
 ```javascript
@@ -84,6 +95,7 @@ a.forEach(function(v,i){
 
 ```
 
+<br><br>
 
 * ## map
 ```javascript
@@ -114,6 +126,7 @@ console.log(answer); // 홀수는 return이 되지 않지만 map은 무조건 �
 // 따라서 10, undefined, 12, undefined, 14, undefined 가 출력 
 ```
 
+<br><br>
 
 * ## filter
 ```javascript
@@ -154,6 +167,8 @@ filter : 원본 배열과 길이 다를 수 있음, 새로운 배열에 무조�
 */
 ```
 
+<br><br>
+
 
 * ## reduce
 ```javascript
@@ -185,6 +200,7 @@ let answer = a.reduce(function(acc,v){
 console.log(answer); // 25
 ```
 
+<br><br>
 
 * ## splice
 ```javascript
@@ -223,6 +239,7 @@ for(let i=0; i<arr.length-1; i++){
     }
 ```
 
+<br><br>
 
 * ## 얕은 복사  
     * 같은 메모리를 참조함
@@ -247,6 +264,8 @@ console.log("ans : " + ans); // ans : NANA
 console.log("str : "+ str); // str : BANANA
 ```
 
+<br><br>
+
 * ## 정규표현식과 replace
 ```javascript
 //정규표현식 g가 있어야 모두다 바꾸고 없으면 처음 발견한 하나만 바꾼다
@@ -256,6 +275,8 @@ console.log(str.replace(/A/, '#')); //B#NANA
 let str="BANANA";
 console.log(str.replace(/A/g, '#')); //B#N#N#
 ```
+
+<br><br>
 
 * ## split
 ```javascript
@@ -272,6 +293,8 @@ console.log(str.split("R").length-1); // 3
 let str="COMPUTERPROGRAMMINGR"; // R 추가
 console.log(str.split("R").length-1); // 4 
 ```
+
+<br><br>
 
 * ## 문자,문자열 대문자, 소문자
     * toUpperCase() : 대문자로 바꾸기
@@ -316,6 +339,8 @@ for(let x of str){
 }
 ```
 
+<br><br>
+
 * ## 문자열 자르기 [ substring(), substr() ]
 
 ```javascript
@@ -334,6 +359,9 @@ let str = "america"
 console.log(str.substring(1,2));//str[1]=m 부터 2-1까지니깐 -> m만 출력
 console.log(str.substring(1,5));//str[1]=m 부터 5-1까지니깐 -> meri 출력
 ```
+
+<br><br>
+
 * ## indexOf()
     * 찾는 문자열이 처음으로 발견된 index 출력
     * 찾는 문자열이 없으면 -1 리턴
