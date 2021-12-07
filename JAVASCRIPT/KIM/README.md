@@ -22,7 +22,7 @@
 
 
 * ## [섹션7 : 정렬과 그리디, 결정알고리즘(이분검색)](https://github.com/siiiido/Algorithm/blob/main/JAVASCRIPT/KIM/%EC%84%B9%EC%85%98%207/README.md)
-* 
+
 * ## [섹션8 : 재귀함수와 완전탐색(DFS:깊이우선탐색)](https://github.com/siiiido/Algorithm/blob/main/JAVASCRIPT/KIM/%EC%84%B9%EC%85%98%208/README.md)
 
 
